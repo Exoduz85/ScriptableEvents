@@ -20,7 +20,17 @@ In order to use and fire off the scriptable event you need to add it as a field 
 
 <img width="374" alt="Skärmavbild 2021-05-10 kl  15 10 36" src="https://user-images.githubusercontent.com/47660094/117664276-e41eb200-b1a1-11eb-87da-53bf1b365479.png">
 
-<img width="683" alt="Skärmavbild 2021-05-10 kl  15 06 58" src="https://user-images.githubusercontent.com/47660094/117663823-60fd5c00-b1a1-11eb-9540-63bfeee5084e.png">
+```cs
+public class SomeEventClass : MonoBehaviour, IPointerClickHandler {
+        // The scriptable event you want to use (to fire off)
+        [SerializeField] ScriptableEvent someScriptableEvent;
+        
+        public void OnPointerClick(PointerEventData eventData) {
+            // Call the Invoke when you want to fire off the event.
+            someScriptableEvent.Invoke();
+        }
+    }
+```
 
 Now that you have a method for firing off the scriptable event from, you can add the "ScriptableEventListener.cs" to any object you wish should listen to that event.
 
