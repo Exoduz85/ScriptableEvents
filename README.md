@@ -2,7 +2,7 @@
  Scriptable events demo
 
 With this you will be able to create scriptable objects which are events that you can use across scenes.
-You may add the scriptable event listener to a object of your choice and and simply drag the scriptable event you created to that listerner slot.
+You may add the scriptable event listener to an object of your choice and simply drag the scriptable event you created to that listerner slot.
 Then you add the scriptable event to the script you wish to invoke the even from, so that any listener may act accordingly.
 
 Simply right click -> Create -> Scriptable Event.
