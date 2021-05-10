@@ -41,3 +41,4 @@ sysinfo.txt
 *.log
 *.json
 *.meta
+.idea/.idea.ScriptableEvents/riderModule.iml
