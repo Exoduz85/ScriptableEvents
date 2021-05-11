@@ -39,6 +39,5 @@ sysinfo.txt
 *.xml
 *.imi
 *.log
-*.json
 *.meta
 .idea/.idea.ScriptableEvents/riderModule.iml
